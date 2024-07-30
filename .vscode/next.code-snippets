@@ -1,0 +1,34 @@
+{
+  "page-component": {
+    "scope": "typescriptreact",
+    "prefix": ["npg"],
+    "body": [
+      "import { NextPage } from 'next';",
+      "",
+      "interface Props {${1}}",
+      "",
+      "const ${TM_FILENAME_BASE/([a-z]*)-*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}Page${2}: NextPage<Props> = ({${3}}) => <>${TM_FILENAME_BASE/([a-z]*)-*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}Page${2}</>;",
+      "",
+      "export default ${TM_FILENAME_BASE/([a-z]*)-*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}Page${2};",
+      ""
+    ],
+    "description": "Generate Next.js Page component."
+  },
+  "api-component": {
+    "scope": "typescript",
+    "prefix": ["napi"],
+    "body": [
+      "import { NextApiHandler } from 'next';",
+      "",
+      "interface Data {${1}}",
+      "",
+      "const ${TM_FILENAME_BASE/([a-z]*)-*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}Handler${2}: NextApiHandler<Data> = (req, res) => {",
+      "  ${3}return res.status(200).json({ TODO: '#TODO' });",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE/([a-z]*)-*([a-z]*)/${1:/capitalize}${2:/capitalize}/g}Handler${2};",
+      ""
+    ],
+    "description": "Generate Next.js Page component."
+  }
+}

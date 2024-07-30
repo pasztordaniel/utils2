@@ -1,0 +1,32 @@
+- RN e2e tests
+- Backoffice
+  - login
+  - sample list with edit
+  - i18n
+- Setup prisma with supabase
+- README
+  - DTO readme
+  - Theme readme
+  - UI readme
+  - API readme
+  - e2e readme
+  - storybook readme
+  - web readme
+  - utils readme
+- github actions
+  - lint
+  - unit tests
+  - e2e tests
+  - build
+- vercel settings
+  - builds
+  - setup redirects
+- vscode settings
+  - api snippets
+    - service
+    - module
+    - controller
+- Update main readme
+- util readme
+  - supabase
+  - nest cli

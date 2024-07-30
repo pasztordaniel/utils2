@@ -1,0 +1,14 @@
+{
+  "name": "@supabase/supabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "types": "indes.ts",
+  "scripts": {
+    "gen:types": "supabase gen types typescript --local > supabase/types/types.ts",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+# Add files here to ignore them from prettier formatting
+
+/_dist
+/out
+/.next
+node_modules
+.next
+pnpm-lock.yaml
+package-lock.json
+public
+
+*.html
+
+dist
+.turbo
+_db
+_dist
+__generated__

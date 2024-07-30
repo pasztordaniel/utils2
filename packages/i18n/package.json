@@ -1,0 +1,22 @@
+{
+  "name": "@package/i18n",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "dependencies": {
+    "i18next": "^22.4.9",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "react-i18next": "^12.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.4"
+  }
+}

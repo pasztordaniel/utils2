@@ -1,0 +1,24 @@
+{
+  "name": "@package/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "types": "indes.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "13.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

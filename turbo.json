@@ -1,0 +1,28 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "pipeline": {
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false
+    },
+    "storybook": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "test": {},
+    "e2e": {
+      "dependsOn": ["dev"],
+      "cache": false
+    },
+    "check": {
+      "dependsOn": ["lint", "test", "build"]
+    }
+  },
+  "globalEnv": ["NEXT_PUBLIC_PUBLIC_TEST_ENV", "PRIVATE_TEST_ENV"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@package/theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1",
+    "eslint-config-custom": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

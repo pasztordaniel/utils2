@@ -1,0 +1,26 @@
+{
+  "story": {
+    "scope": "typescriptreact",
+    "prefix": ["story"],
+    "body": [
+      "import type { Meta, StoryObj } from '@storybook/react';",
+      "import { ${TM_FILENAME_BASE/.stories//g} } from '@package/ui';",
+      "",
+      "type Story = StoryObj<typeof ${TM_FILENAME_BASE/.stories//g}>;",
+      "",
+      "const meta: Meta<typeof ${TM_FILENAME_BASE/.stories//g}> = {",
+      "  title: '${TM_DIRECTORY/^.+\\/(.*)$/$1/}/${TM_FILENAME_BASE/.stories//g}',",
+      "  component: ${TM_FILENAME_BASE/.stories//g},",
+      "  argTypes: {},",
+      "};",
+      "",
+      "export default meta;",
+      "",
+      "export const ${TM_FILENAME_BASE/.stories$|(^[^.stories]+)/${1:/camelcase}/g}: Story = {",
+      "  render: ({ ...args }) => <${TM_FILENAME_BASE/.stories//g} {...args} />,",
+      "};",
+      ""
+    ],
+    "description": "Generate storybook story."
+  }
+}

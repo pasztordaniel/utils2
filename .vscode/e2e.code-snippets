@@ -1,0 +1,18 @@
+{
+  "api-component": {
+    "scope": "typescript",
+    "prefix": ["e2e"],
+    "body": [
+      "/// <reference types=\"cypress\" />",
+      "",
+      "describe('${1:describe text}', () => {",
+      "  beforeEach(() => {",
+      "    cy.visit('/');",
+      "  });",
+      "  it('${2:should work}', () => {${3}});",
+      "});",
+      ""
+    ],
+    "description": "Generate Next.js Page component."
+  }
+}

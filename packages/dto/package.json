@@ -1,0 +1,20 @@
+{
+  "name": "@package/dto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "class-validator": "^0.14.0"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*"
+  }
+}
