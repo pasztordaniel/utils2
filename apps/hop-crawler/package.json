@@ -1,0 +1,28 @@
+{
+  "name": "hop-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "tsconfig": "workspace:*",
+    "eslint-config-custom": "workspace:*"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "chalk": "4.1.2",
+    "decimal.js": "^10.4.3",
+    "jsdom": "^24.1.0",
+    "lodash": "^4.17.21"
+  }
+}
